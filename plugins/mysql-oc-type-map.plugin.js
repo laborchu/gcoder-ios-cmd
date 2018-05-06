@@ -7,7 +7,7 @@ var MysqlOcTypeMapFilterPlugin = module.exports = gcoder.Plugin.extend({
 });
 
 MysqlOcTypeMapFilterPlugin.prototype.do = function (tables,config) {
-    MysqlJavaTypeMapFilterPlugin.__super__.do();
+    MysqlOcTypeMapFilterPlugin.__super__.do();
     let splitChat = config.splitChat || "_";
     let tsTypeMap = {
         "int":"int",
