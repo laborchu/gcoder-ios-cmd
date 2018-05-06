@@ -28,7 +28,7 @@ MysqlOcTypeMapFilterPlugin.prototype.do = function (tables,config) {
         for(let field of table.fieldArray){
             let fieldType = field.fieldType.replace(/\(\d+,\d\)/,"");
             field.ocType = tsTypeMap[fieldType];
-            if(field.ocType.startsWith("NS")){
+            if(field.ocType&&field.ocType.startsWith("NS")){
                 field.ocObject = true;
             }
             if(!field.ocType){
