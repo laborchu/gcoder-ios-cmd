@@ -31,7 +31,7 @@ MysqlOcTypeMapFilterPlugin.prototype.do = function (tables,config) {
             if(field.ocType.startsWith("NS")){
                 field.ocObject = true;
             }
-            if(!field.javaType){
+            if(!field.ocType){
                 console.log(`${field.fieldType} not map ocType`);
             }
         }
