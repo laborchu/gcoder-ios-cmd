@@ -22,7 +22,7 @@ MysqlOcTypeMapFilterPlugin.prototype.do = function (tables,config) {
         "datetime":"NSDate",
         "decimal":"NSDecimal",
         "text":"NSString",
-        "char":"char",
+        "char":"NSString",
     }
     for(let table of tables){
         table.prefix = table.tableName.split("_")[0];
