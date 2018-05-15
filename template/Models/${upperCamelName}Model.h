@@ -7,5 +7,5 @@
 /**
  * ${field.comment}
  */
-@property(<%if(field.ocObject){%>weak<%},%> nonatomic) ${field.ocType} <%if(field.ocObject){%>*<%}%>${field.lowerCamelName};<%})%>
+@property(<%if(field.ocObject){%>weak,<%}%> nonatomic) ${field.ocType} <%if(field.ocObject){%>*<%}%>${field.lowerCamelName};<%})%>
 @end
